@@ -59,9 +59,3 @@ tidy_dat <- tidy_dat[order(subject, activity)]
 
 #write the tidy data set
 write.csv(tidy_dat, file = "human_activity_recognition_tidy.txt")
-
-#do some more tests here to make sure
-summary(subset(dat, dat$activity == "WALKING" & dat$subject == 5))
-summary(subset(dat$"tGravityAcc-std()-X", dat$activity == "SITTING" & dat$subject == 30))
-
-summary(subset(dat, dat$activity == "WALKING_DOWNSTAIRS" & dat$subject == 29))
