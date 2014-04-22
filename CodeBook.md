@@ -58,109 +58,90 @@ Finally, the tidy dataset was written to human_activity_recognition_tidy.txt.
 
 ## Variables
 
-The following variables all apear in the tidy dataset. The feature variables are all mean or standard deviation measurements.
+The following variables all appear in the tidy dataset. The feature variables are all mean or standard deviation measurements.
 
-### subject 2
-&nbsp;&nbsp;The code for the subject performing the activity.
-&nbsp;&nbsp;&nbsp;&nbsp;01..30 Unique subject identifier.
+Note: For detailed technical descriptions of the variables, see features_info.txt in the original ZIP file (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 
-### activity
-&nbsp;&nbsp;The acivity being performed. One of the following factor levels:
-&nbsp;&nbsp;&nbsp;&nbsp;- WALKING
-&nbsp;&nbsp;&nbsp;&nbsp;- WALKING_UPSTAIRS
-&nbsp;&nbsp;&nbsp;&nbsp;- WALKING_DOWNSTAIRS
-&nbsp;&nbsp;&nbsp;&nbsp;- SITTING
-&nbsp;&nbsp;&nbsp;&nbsp;- STANDING
-&nbsp;&nbsp;&nbsp;&nbsp;- LAYING
+#### subject 2
 
-### tBodyAcc-mean()-X
-### tBodyAcc-mean()-Y
-### tBodyAcc-mean()-Z
+The code for the subject performing the activity.
+01..30 Unique subject identifier.
 
-### tBodyAcc-std()-X
-### tBodyAcc-std()-Y
-### tBodyAcc-std()-Z
+#### activity
 
-### tGravityAcc-mean()-X
-### tGravityAcc-mean()-Y
-### tGravityAcc-mean()-Z
+The activity being performed. One of the following factor levels:
 
-### tGravityAcc-std()-X
-### tGravityAcc-std()-Y
-### tGravityAcc-std()-Z
+- WALKING
+- WALKING_UPSTAIRS
+- WALKING_DOWNSTAIRS
+- SITTING
+- STANDING
+- LAYING
 
-"tBodyAccJerk-mean()-X"
-"tBodyAccJerk-mean()-Y"
-"tBodyAccJerk-mean()-Z"
+#### tBodyAcc
 
-"tBodyAccJerk-std()-X"
-"tBodyAccJerk-std()-Y"
-"tBodyAccJerk-std()-Z"
+Time domain body acceleration signal from accelerometer. There are measurements for the X, Y, and Z axes for both mean and standard deviation.
+
+#### tGravityAcc
+
+Time domain gravity acceleration signal from accelerometer. There are measurements for the X, Y, and Z axes for both mean and standard deviation.
+
+#### tBodyAccJerk
+
+Time domain body jerk signal from accelerometer. There are measurements for the X, Y, and Z axes for both mean and standard deviation.
    
-"tBodyGyro-mean()-X"
-"tBodyGyro-mean()-Y"
-"tBodyGyro-mean()-Z"
+#### tBodyGyro
 
-"tBodyGyro-std()-X"
-"tBodyGyro-std()-Y"          
-"tBodyGyro-std()-Z"
+Time domain body signal from gyroscope. There are measurements for the X, Y, and Z axes for both mean and standard deviation.
 
-"tBodyGyroJerk-mean()-X"
-"tBodyGyroJerk-mean()-Y"
-"tBodyGyroJerk-mean()-Z"
+#### tBodyGyroJerk
 
-"tBodyGyroJerk-std()-X"     
-"tBodyGyroJerk-std()-Y"
-"tBodyGyroJerk-std()-Z"
+Time domain body jerk signal from gyroscope. There are measurements for the X, Y, and Z axes for both mean and standard deviation.
 
-"tBodyAccMag-mean()"
-"tBodyAccMag-std()"
+#### tBodyAccMag
 
-"tGravityAccMag-mean()"      
-"tGravityAccMag-std()"
+Magnitude of three-dimensional body acceleration signal. There are variables for both mean and standard deviation.
 
-"tBodyAccJerkMag-mean()"
-"tBodyAccJerkMag-std()"
+#### tGravityAccMag 
 
-"tBodyGyroMag-mean()"
-"tBodyGyroMag-std()"
+Magnitude of three-dimensional gravity acceleration signal. There are variables for both mean and standard deviation.
+
+#### tBodyAccJerkMag
+
+Magnitude of three-dimensional body jerk signal from accelerometer. There are variables for both mean and standard deviation.
+
+#### tBodyGyroMag
+
+Magnitude of three-dimensional body gyroscope signal. There are variables for both mean and standard deviation.
          
-"tBodyGyroJerkMag-mean()"
-"tBodyGyroJerkMag-std()"
+#### tBodyGyroJerkMag
 
-"fBodyAcc-mean()-X"
-"fBodyAcc-mean()-Y"
-"fBodyAcc-mean()-Z"
-          
-"fBodyAcc-std()-X"
-"fBodyAcc-std()-Y"
-"fBodyAcc-std()-Z"
+Magnitude of three-dimensional body jerk signal from gyroscope. There are variables for both mean and standard deviation.
 
-"fBodyAccJerk-mean()-X"
-"fBodyAccJerk-mean()-Y"      
-"fBodyAccJerk-mean()-Z"
+#### fBodyAcc
 
-"fBodyAccJerk-std()-X"
-"fBodyAccJerk-std()-Y"
-"fBodyAccJerk-std()-Z"
+Fast Fourier Transform (FFT) applied to tBodyAcc. There are measurements for the X, Y, and Z axes for both mean and standard deviation.
 
-"fBodyGyro-mean()-X"         
-"fBodyGyro-mean()-Y"
-"fBodyGyro-mean()-Z"
+#### fBodyAccJerk
 
-"fBodyGyro-std()-X"
-"fBodyGyro-std()-Y"
-"fBodyGyro-std()-Z"
+FFT applied to tBodyAccJerk. There are measurements for the X, Y, and Z axes for both mean and standard deviation.
 
-          
-"fBodyAccMag-mean()"
-"fBodyAccMag-std()"
+#### fBodyGyro      
 
-"fBodyBodyAccJerkMag-mean()"
-"fBodyBodyAccJerkMag-std()"
+FFT applied to tBodyGyro. There are measurements for the X, Y, and Z axes for both mean and standard deviation.
 
-"fBodyBodyGyroMag-mean()"   
-"fBodyBodyGyroMag-std()"
+#### fBodyAccMag
 
-"fBodyBodyGyroJerkMag-mean()"
-"fBodyBodyGyroJerkMag-std()" 
+FFT applied to tBodyAccMag. There are measurements for both mean and standard deviation.
+
+#### fBodyBodyAccJerkMag
+
+FFT applied to tBodyAccJerkMag. There are measurements for both mean and standard deviation.
+
+#### fBodyBodyGyroMag
+
+FFT applied to tBodyGyroMag. There are measurements for both mean and standard deviation.
+
+#### fBodyBodyGyroJerkMag
+
+FFT applied to tBodyGyroJerkMag. There are measurements for both mean and standard deviation.
