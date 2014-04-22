@@ -62,10 +62,9 @@ The following variables all appear in the tidy dataset. The feature variables ar
 
 Note: For detailed technical descriptions of the variables, see features_info.txt in the original ZIP file (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 
-#### subject 2
+#### subject
 
-The code for the subject performing the activity.
-01..30 Unique subject identifier.
+The identity code for the subject performing the activity (ranges from 1 to 30).
 
 #### activity
 
@@ -92,7 +91,7 @@ Time domain body jerk signal from accelerometer. There are measurements for the 
    
 #### tBodyGyro
 
-Time domain body signal from gyroscope. There are measurements for the X, Y, and Z axes for both mean and standard deviation.
+Time domain body signal (angular velocity) from gyroscope. There are measurements for the X, Y, and Z axes for both mean and standard deviation.
 
 #### tBodyGyroJerk
 
