@@ -1,4 +1,4 @@
-#script assumes that all the relevant files have been placed in the same directory
+#script assumes that all the relevant files have been placed in the working directory
 
 #function to drop all columns that don't contain certain patterns
 keepCol <- function(df, pattern) {
@@ -10,7 +10,7 @@ keepCol <- function(df, pattern) {
   return(df)
 }
 
-#read the test data into dataframes
+#read the test data into data frames
 x_test <- read.table("X_test.txt")
 subjects_test <- read.table("subject_test.txt")
 y_test <- read.table("y_test.txt")
